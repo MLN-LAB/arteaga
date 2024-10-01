@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arteaga</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Página en construcción</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -12,46 +16,46 @@
         }
 
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            color: #333;
+            background-color: #f7f7f7;
+            font-family: 'Roboto', sans-serif;
         }
 
         .container {
             text-align: center;
+            animation: fadeIn 2s ease-in-out;
         }
 
         h1 {
-            font-size: 3rem;
-            color: #FF0000;
+            font-size: 3em;
+            font-weight: 300;
+            color: #333;
         }
 
-        .site-url {
-            font-size: 2rem; 
-            color: #000000; 
-        }
-
-        .construction-message {
-            font-size: 1.5rem;
-            color: #555;
+        p {
+            font-size: 1.2em;
             margin-top: 10px;
+            color: #777;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Bienvenidos</h1>
-        <h1 class="site-url">www.arteaga.com.ar</h1>
-        <p class="construction-message">Página web en construcción</p>
+        <p>www.arteaga.com.ar</p>
+        <p>Página web en construcción</p>
     </div>
-
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            console.log("Página en construcción: arteaga");
+            console.log('Página cargada correctamente');
         });
     </script>
 </body>
